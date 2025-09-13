@@ -1,3 +1,9 @@
+# Día 1: Conceptos SOC
+
+---
+
+[Inicio](../README.md) | [Día 2: Windows Server & Active Directory ⟶](./02-Windows_AD.md)
+
 # Conceptos Fundamentales de un SOC
 
 ## 1. ¿Qué es un SOC y por qué existe?
@@ -47,7 +53,7 @@ Un SOC combina **tres elementos esenciales**:
      | Producto         | Plataforma         | ¿Gratuito? | Características Especiales |
      |------------------|-------------------|------------|---------------------------|
      | Cowrie           | Linux             | Sí         | Simulación de SSH y Telnet, registro detallado de ataques. |
-     | Honeyd           | Linux, Windows    | Sí         | Simulación de múltiples servicios, personalización avanzada. |
+     | Honeyd           | Linux, Windows    | Sí        | Simulación de múltiples servicios, personalización avanzada. |
      | Canary           | Hardware, Software | No         | Fácil despliegue, alertas automáticas, integración con SIEM. |
 
    - **Threat Intelligence:** Conjunto de información sobre amenazas actuales (tácticas, técnicas, indicadores de compromiso) que ayuda a anticipar y defenderse de ataques. Se obtiene de fuentes internas y externas, y se utiliza para mejorar la detección y respuesta en el SOC. Ejemplos: MISP, Recorded Future, IBM X-Force.
