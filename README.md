@@ -24,7 +24,7 @@ El plan está estructurado en cuatro semanas temáticas, cada una con un objetiv
 
 *   **Día 1:** Introducción a SIEM (Splunk / Wazuh). Creación de consultas básicas (failed logins, brute force attempts).
 *   **Día 2:** Análisis de logs de Windows (Event IDs comunes: 4624, 4625, 4672).
-*   **Día 3:** Análisis de logs de Linux (Intentos de conexión SSH, escalamiento de privilegios con `sudo`).
+*   **Día 3:** Análisis de logs de Linux (Intentos de conexión SSH, escalada de privilegios con `sudo`).
 *   **Día 4:** Casos prácticos de correlación → Combinación de eventos de distintas fuentes para detectar un ataque.
 *   **Día 5:** Repaso y práctica en un laboratorio personal con Wazuh o Splunk Free.
 
@@ -64,14 +64,60 @@ Para apoyar este plan de estudio, se utilizarán los siguientes recursos (gratui
 
 El progreso y las notas de estudio se documentarán en este repositorio siguiendo una estructura de carpetas por semana. Cada día de estudio tendrá su propio archivo Markdown (`.md`) con notas, comandos, capturas de pantalla y resúmenes.
 
-```
+### Navegación rápida
+
+- [Semana 1 – Fundamentos de SOC e Infraestructura](./Semana1-Fundamentos_SOC/)
+    - [Día 1: Conceptos SOC](./Semana1-Fundamentos_SOC/01-Conceptos_SOC.md)
+    - [Día 2: Windows Server & Active Directory](./Semana1-Fundamentos_SOC/02-Windows_AD.md)
+    - [Día 3: Linux](./Semana1-Fundamentos_SOC/03-Linux.md)
+    - [Día 4: Redes básicas](./Semana1-Fundamentos_SOC/04-Redes_Basicas.md)
+    - [Día 5: OT Overview](./Semana1-Fundamentos_SOC/05-OT_Overview.md)
+- [Semana 2 – SIEM, Logs y Detección](./Semana2-SIEM_Logs/)
+    - [Día 1: Introducción a SIEM](./Semana2-SIEM_Logs/01-Introduccion_SIEM.md)
+    - [Día 2: Análisis de logs de Windows](./Semana2-SIEM_Logs/02-Logs_Windows.md)
+    - [Día 3: Análisis de logs de Linux](./Semana2-SIEM_Logs/03-Logs_Linux.md)
+    - [Día 4: Casos prácticos de correlación](./Semana2-SIEM_Logs/04-Casos_Correlacion.md)
+    - [Día 5: Repaso y práctica en laboratorio](./Semana2-SIEM_Logs/05-Lab_Practico.md)
+- [Semana 3 – EDR y Análisis de Malware](./Semana3-EDR_Malware/)
+    - [Día 1: Conceptos de EDR](./Semana3-EDR_Malware/01-Conceptos_EDR.md)
+    - [Día 2: Técnicas de malware](./Semana3-EDR_Malware/02-Tecnicas_Malware.md)
+    - [Día 3: Análisis de sandbox](./Semana3-EDR_Malware/03-Analisis_Sandbox.md)
+    - [Día 4: MITRE ATT&CK](./Semana3-EDR_Malware/04-MITRE_ATTACK.md)
+    - [Día 5: Caso práctico](./Semana3-EDR_Malware/05-Caso_Practico.md)
+- [Semana 4 – Respuesta a Incidentes y Seguridad OT](./Semana4-Respuesta_Incidentes/)
+    - [Día 1: Ciclo de vida de la respuesta a incidentes](./Semana4-Respuesta_Incidentes/01-Ciclo_Respuesta.md)
+    - [Día 2: Hardening en entornos OT/ICS](./Semana4-Respuesta_Incidentes/02-Hardening_OT.md)
+    - [Día 3: Casos de estudio reales en OT](./Semana4-Respuesta_Incidentes/03-Casos_Reales_OT.md)
+    - [Día 4: Mini-simulacro de respuesta](./Semana4-Respuesta_Incidentes/04-Mini_Simulacro.md)
+    - [Día 5: Repaso general y práctica final](./Semana4-Respuesta_Incidentes/05-Repaso_Final.md)
+
+---
+
+```text
 /
 |-- Semana1-Fundamentos_SOC/
-|   |-- Dia1-Conceptos_SOC.md
-|   |-- Dia2-Windows_AD.md
-|   `-- ...
+|   |-- 01-Conceptos_SOC.md
+|   |-- 02-Windows_AD.md
+|   |-- 03-Linux.md
+|   |-- 04-Redes_Basicas.md
+|   |-- 05-OT_Overview.md
 |-- Semana2-SIEM_Logs/
+|   |-- 01-Introduccion_SIEM.md
+|   |-- 02-Logs_Windows.md
+|   |-- 03-Logs_Linux.md
+|   |-- 04-Casos_Correlacion.md
+|   |-- 05-Lab_Practico.md
 |-- Semana3-EDR_Malware/
+|   |-- 01-Conceptos_EDR.md
+|   |-- 02-Tecnicas_Malware.md
+|   |-- 03-Analisis_Sandbox.md
+|   |-- 04-MITRE_ATTACK.md
+|   |-- 05-Caso_Practico.md
 |-- Semana4-Respuesta_Incidentes/
+|   |-- 01-Ciclo_Respuesta.md
+|   |-- 02-Hardening_OT.md
+|   |-- 03-Casos_Reales_OT.md
+|   |-- 04-Mini_Simulacro.md
+|   |-- 05-Repaso_Final.md
 `-- README.md
 ```
